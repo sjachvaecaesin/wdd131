@@ -4,6 +4,7 @@ body {
     padding: 0;
     grid-template: auto 1fr auto / 1fr 1fr 1fr;
     margin: 0;
+    font-family: 'Comic Neue', Helvetica, sans-serif;
 }
 
 header {
@@ -63,7 +64,7 @@ main {
 #me {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 #me p {
@@ -92,6 +93,7 @@ main {
 #place {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 25px;
 }
 
 #place img {
@@ -104,6 +106,8 @@ main {
 
 #place p {
     grid-column: 2 / 4;
+    font-size: large;
+    margin-right: 15px;
 }
 
 #resources div {
