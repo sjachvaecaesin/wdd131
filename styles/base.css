@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: rgb(59, 59, 59);
+    background: rgb(212, 9, 9);
     grid-column: 1 / 4;
     color: white;
 }
@@ -52,13 +52,11 @@ main {
 
 .card h2 {
     text-align: center;
-    background-color: lightblue;
+    background-color: rgb(255, 105, 105);
     border-start-start-radius: 4px;
     border-start-end-radius: 4px;
     padding: .5rem;
     margin: 0;
-    grid-row: 1 / 2;
-    grid-column: 1 / 4;
 }
 
 #me {
@@ -85,6 +83,9 @@ main {
 #about h3 {
     text-align: center;
     font-size: xx-large;
+    border-bottom: 1px solid lightgrey;
+    width: 80%;
+    margin: 20px auto;
 }
 
 #place {
@@ -96,7 +97,7 @@ main {
     grid-column: 1 / 2;
     display: block;
     margin: auto;
-    width: 150px;
+    width: 300px;
     height: auto;
 }
 
@@ -104,10 +105,23 @@ main {
     grid-column: 2 / 4;
 }
 
+#resources div {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 91.5%;
+}
+
+#resources ul {
+    grid-row: 2 / 3;
+}
+
+#resources li {
+    font-size: large;
+}
+
 footer {
-    background: rgb(59, 59, 59);
+    background: rgb(255, 105, 105);
     padding: .7rem;
     text-align: center;
     grid-column: 1 / 4;
-    color: white;
 }
