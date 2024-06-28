@@ -1,0 +1,51 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: .35fr auto 1fr .5fr / 1fr 1fr 1fr 1fr;
+    margin: 0px;
+}
+
+header {
+    background: rgb(59, 59, 59);
+    grid-column: 1 / 5;
+    padding: .17rem;
+    color: white;
+}
+
+header h2 {
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+    background: black;
+    grid-column: 1 / 5;
+    padding: .78rem;
+    color: white;
+}
+
+nav h3 {
+    margin: auto;
+}
+
+main {
+    background: rgb(161, 161, 161);
+    grid-column: 1 / 4;
+    height: 100%;
+    padding: 1rem;
+    font-size: x-large;
+}
+
+.right-sidebar {
+    grid-column: 4 / 5;
+    padding: .6rem;
+    font-size: x-large;
+}
+
+footer {
+    background: rgb(59, 59, 59);
+    padding: 1.7rem;
+    text-align: center;
+    grid-column: 1 / 5;
+    color: white;
+}
