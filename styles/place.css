@@ -40,6 +40,10 @@ div {
     text-align: center;
 }
 
+div ul {
+    padding: 0;
+}
+
 div li {
     margin: 15px 0;
     list-style: none;
@@ -58,5 +62,4 @@ footer {
     background: var(--alt-color);
     padding: .7rem;
     text-align: center;
-    margin-top: 10px;
 }
