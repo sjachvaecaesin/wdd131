@@ -49,10 +49,6 @@ div li {
     list-style: none;
 }
 
-#weather h2 span {
-    display: none;
-}
-
 #weather img {
     width: 30%;
     height: auto;
