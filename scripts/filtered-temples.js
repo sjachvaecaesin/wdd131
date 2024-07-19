@@ -6,6 +6,11 @@ const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 const h1 = document.querySelector('h1');
 const templesElement = document.querySelector('#temples');
+const homeNav = document.querySelector('#home');
+const oldNav = document.querySelector('#old');
+const newNav = document.querySelector('#new');
+const largeNav = document.querySelector('#large');
+const smallNav = document.querySelector('#small');
 
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
@@ -129,3 +134,28 @@ const displayTemples = (temples) => {
 }
 
 displayTemples(temples);
+
+homeNav.addEventListener('click', () => {
+  templesElement.innerHTML = '';
+  displayTemples(temples);
+});
+
+oldNav.addEventListener('click', () => {
+  templesElement.innerHTML = '';
+  displayTemples(temples.filter(temple => Number(temple.dedicated.substring(0, 4)) < 1900));
+});
+
+newNav.addEventListener('click', () => {
+  templesElement.innerHTML = '';
+  displayTemples(temples.filter(temple => Number(temple.dedicated.substring(0, 4)) > 2000));
+});
+
+smallNav.addEventListener('click', () => {
+  templesElement.innerHTML = '';
+  displayTemples(temples.filter(temple => temple.area < 10000));
+});
+
+largeNav.addEventListener('click', () => {
+  templesElement.innerHTML = '';
+  displayTemples(temples.filter(temple => temple.area > 90000));
+});
