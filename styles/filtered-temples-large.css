@@ -1,0 +1,36 @@
+@media (min-width: 768px) {
+
+    #temples {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: .5rem;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    #temples article {
+        margin: 1rem;
+    }
+
+    main h2 {
+        grid-column: 1/4;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    header nav {
+        grid-column: 4/7;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+}
