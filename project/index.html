@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Elias Streeter">
+    <meta name="description" content="Elias Streeter WDD 131 - Stumbleduck Project Home Page">
+    <title>Stumbleduck Home Page</title>
     <link rel="stylesheet" href="styles/base.css">
-    <title>Stumbleduck Home</title>
+    <link rel="stylesheet" href="styles/base-mobile.css">
+    <script src="scripts/base.js" defer></script>
 </head>
 <body>
     <header>
         <a id="logo-link" href="index.html">
-            <img class="logo" alt="Stumbleduck Logo" src="images/stumbleduck-temp-logo.jpg" loading="lazy">
+            <img class="logo" alt="Stumbleduck Logo" src="images/stumbleduck-temp-logo.webp" loading="lazy">
         </a>
-        <nav>
+        <nav class="navigation">
             <a href="index.html">Home</a>
             <a href="lore.html">Lore</a>
             <a href="adventure.html">Adventure Example</a>
         </nav>
+        <button id="menu" aria-label="Hamburger button"></button>
     </header>
     <main class="home-grid">
         <section class="concept">
@@ -26,8 +31,8 @@
                 Stumbleduck is the setting for a Dungeons & Dragons adventuring campaign. The concept was designed to allow adventuring parties to have choice in their progress from 1st to 20th level. There are multiple hooks that will draw groups into adventure. Some of the lower level hooks will lead them into the city, others will lead them into the wild, and yet others will lead them into the sea, the mountains, or someplace dark. Upon satisfying the initial adventure, and obtaining a mid-range level, the group will once again find that there are multiple hooks that will draw them into adventure. Do they return to the same setting and deepen their experience, or do they branch off into another part of the land?
             </p>
         </section>
-        <img id="dice" alt="playing dice" src="images/dice.jpg" loading="lazy">
-        <img id="forest" alt="forest" src="images/forest-path.jpg" loading="lazy">
+        <img id="dice" alt="playing dice" src="images/dice.webp" loading="lazy">
+        <img id="forest" alt="forest" src="images/forest-path.webp" loading="lazy">
         <section class="DM">
             <h2>
                 How can this help DMs?
@@ -47,7 +52,7 @@
         </div>
     </main>
     <footer>
-        <p>&copy;<span id="year"></span> - Elias Streeter - Kentucky</p>
+        <span id="foot"></span>
     </footer>
 </body>
 </html>

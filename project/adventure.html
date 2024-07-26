@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Elias Streeter">
+    <meta name="description" content="Elias Streeter WDD 131 - Stumbleduck Project Adventure Scenario Page">
+    <title>Stumbleduck Adventure Scenario Page</title>
     <link rel="stylesheet" href="styles/base.css">
-    <title>Stumbleduck Home</title>
+    <link rel="stylesheet" href="styles/base-mobile.css">
+    <script src="scripts/base.js" defer></script>
 </head>
 <body>
     <header>
-        <a href="index.html">
-            <img class="logo" alt="Stumbleduck Logo" src="images/stumbleduck-temp-logo.jpg" loading="lazy">
+        <a id="logo-link" href="index.html">
+            <img class="logo" alt="Stumbleduck Logo" src="images/stumbleduck-temp-logo.webp" loading="lazy">
         </a>
-        <nav>
+        <nav class="navigation">
             <a href="index.html">Home</a>
             <a href="lore.html">Lore</a>
             <a href="adventure.html">Adventure Example</a>
         </nav>
+        <button id="menu" aria-label="Hamburger button"></button>
     </header>
     <main class="adventure-grid">
-        <img id="cave" alt="cave view" src="images/mountain-path.jpg" height="500" width="500" loading="lazy">
+        <h1>Example Scenario For Campaign Plot</h1>
         <div>
             <p>
                 The finding from the kobold clerics
@@ -35,10 +40,10 @@
         Some of the pelts identified the recent goings-on within the kobold community. It appears that Flauxorr has a voracious appetite, which initially depleted the kobold community of many of its numbers, and that Flauxorr, knowing his heritage and destiny, has been a hard task-master. So much so that there has been a need to crack down on unnamed dissident members of the kobold community. In short, while the bulk of the kobolds have pledged their lives to Flauxorr, there are those who feel that life was better before the egg hatched.
                 </p>
         </div>
-        <img id="game" alt="tabletop" src="images/tabletop.jpg" height="600" width="500" loading="lazy">
+        <img id="cave" alt="cave view" src="images/mountain-path.webp" loading="lazy">
     </main>
     <footer>
-        <p>&copy;<span id="year"></span> - Elias Streeter - Kentucky</p>
+        <span id="foot"></span>
     </footer>
 </body>
 </html>

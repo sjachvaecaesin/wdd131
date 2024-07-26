@@ -1,14 +1,11 @@
-document.querySelector("#year").textContent = new Date().getFullYear();
-
+const year = new Date().getFullYear();
+const foot = document.querySelector('#foot');
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
-const h1 = document.querySelector('h1');
+
+foot.innerHTML = `&copy;${year} - Elias Streeter - Kentucky`;
 
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
-    h1.style.display = "block";
-    if (hamButton.classList.contains('open')) {
-		h1.style.display = "none";
-	};
 });

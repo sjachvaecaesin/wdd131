@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Elias Streeter">
+    <meta name="description" content="Elias Streeter WDD 131 - Stumbleduck Project Lore Page">
+    <title>Stumbleduck Lore Page</title>
     <link rel="stylesheet" href="styles/base.css">
-    <title>Stumbleduck Home</title>
+    <link rel="stylesheet" href="styles/base-mobile.css">
+    <script src="scripts/base.js" defer></script>
 </head>
 <body>
     <header>
-        <a href="index.html">
-            <img class="logo" alt="Stumbleduck Logo" src="images/stumbleduck-temp-logo.jpg" loading="lazy">
+        <a id="logo-link" href="index.html">
+            <img class="logo" alt="Stumbleduck Logo" src="images/stumbleduck-temp-logo.webp" loading="lazy">
         </a>
-        <nav>
+        <nav class="navigation">
             <a href="index.html">Home</a>
             <a href="lore.html">Lore</a>
             <a href="adventure.html">Adventure Example</a>
         </nav>
+        <button id="menu" aria-label="Hamburger button"></button>
     </header>
     <main class="lore-grid">
-        <img id="map" alt="world map" src="images/stumbleduck-map.png" height="350" width="500" loading="lazy">
-        <img id="mountain" alt="lone mountain" src="images/single-mountain.jpg" height="350" width="500" loading="lazy">
+        <img id="map" alt="world map" src="images/stumbleduck-map.webp" loading="lazy">
         <h1>Lore</h1>
         <div class="lore-content">
             <p>
@@ -82,7 +86,7 @@
         </div>
     </main>
     <footer>
-        <p>&copy;<span id="year"></span> - Elias Streeter - Kentucky</p>
+        <span id="foot"></span>
     </footer>
 </body>
 </html>
